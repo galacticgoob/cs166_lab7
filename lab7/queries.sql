@@ -9,7 +9,7 @@ SELECT Count(*) As PartCount
 			WHERE NY.color = C1.color_id AND C1.color_name = 'Red' UNION ALL
 		SELECT part_number
 			FROM part_sfo SF, color C2
-			WHERE SF.color = C2.color_id AND color_name = 'Red');
+			WHERE SF.color = C2.color_id AND color_name = 'Red') As Temp;
 
 SELECT S.supplier_name
 	FROM supplier S
